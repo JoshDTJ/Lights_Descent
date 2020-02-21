@@ -55,8 +55,10 @@ MonoBehaviour:
   camTrans: {fileID: 0}
   MinAngle: -35
   MaxAngle: 35
+
   m_rotationHoriz: Horizontal
   m_rotationVert: Vertical
+
 --- !u!1 &2633145154646455636
 GameObject:
   m_ObjectHideFlags: 0
