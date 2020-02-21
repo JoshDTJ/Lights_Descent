@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+// a basic third person character controller that move relative to the camera and can jump
+// gameObject MUST have a rigidBody
 public class ThirdPersonCharacterController : MonoBehaviour
 {
-    public Vector3 velocity;
-
-    Rigidbody player;
-
+    [Header("Camera Relation")]
     public Transform myCamera;
 
+    [Header("Movement Variables")]
     public float moveAcceleration = 10;
     public float maxMoveSpeed = 10;
     public float turnSpeed = 7.5f;
     public float jumpForce = 250;
 
+    [Header("Grounded Debug")]
     public bool grounded;
 
+    Rigidbody player;
     float distToGround = 1.05f;
 
     // Start is called before the first frame update
@@ -32,7 +34,9 @@ public class ThirdPersonCharacterController : MonoBehaviour
         Vector3 dir = (myCamera.right * Input.GetAxis("Horizontal")) + (myCamera.forward * Input.GetAxis("Vertical"));
         dir.y = 0;
 
+        //change or add to these layer masks if you have more than a "ground" layer for the player to walk on
         LayerMask mask = LayerMask.GetMask("Ground");
+
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), distToGround, mask))
         {
             grounded = true;
@@ -63,6 +67,6 @@ public class ThirdPersonCharacterController : MonoBehaviour
             player.AddForce(0, jumpForce, 0);
         }
 
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * distToGround, Color.red);
+        //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * distToGround, Color.red);  //grounded debug
     }
 }
