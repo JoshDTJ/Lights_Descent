@@ -1,0 +1,19 @@
+Naming Conventions
+3:12 PM 2/14/2020
+
+Pretenses:
+- Scripts
+	- scri_MyScript
+- Models
+	- modl_MyModel
+- Prefabs
+	- prfb_MyPrefab
+- Materials
+	- mtrl_MyMaterial
+ect.
+
+Scenes:
+
+*do not name a scene with your name
+- Joshs_Scene (X)
+- Level01_Progress (√)

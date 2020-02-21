@@ -37,7 +37,8 @@ namespace SA
             pivot = camTrans.parent;
         }
 
-       
+
+        public string m_rotationHoriz, m_rotationVert;
 
         //gets input from axis of the mouse as well as controller
         public void Tick(float d)
@@ -45,8 +46,10 @@ namespace SA
             float h = Input.GetAxis("Mouse X");
             float v = Input.GetAxis("Mouse Y");
 
-            float c_h = Input.GetAxis("RightAxis X");
-            float c_v = Input.GetAxis("RightAxis Y");
+
+            float c_h = Input.GetAxis(m_rotationHoriz);
+            float c_v = 0;//Input.GetAxis(m_rotationVert);
+
 
             float targetSpeed = mouseSpeed;
 
