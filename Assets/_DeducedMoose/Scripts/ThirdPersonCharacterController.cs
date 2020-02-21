@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 // a basic third person character controller that move relative to the camera and can jump
-// gameObject MUST have a rigidBody
+// gameObject MUST have a rigidBody and freeze X and Z rotation
 public class ThirdPersonCharacterController : MonoBehaviour
 {
     [Header("Camera Relation")]
