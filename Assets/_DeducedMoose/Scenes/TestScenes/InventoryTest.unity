@@ -813,7 +813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913958577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.352, y: 0.792, z: 0.254}
+  m_LocalPosition: {x: 1.111, y: 0.547, z: 0.254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 969823711}
@@ -853,8 +853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -229}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -200}
+  m_SizeDelta: {x: 218, y: 53.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925473336
 MonoBehaviour:
@@ -877,8 +877,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_Font: {fileID: 12800000, guid: c1194e0a0a49912468333b4228ce9f08, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -911,8 +911,8 @@ GameObject:
   - component: {fileID: 969823709}
   - component: {fileID: 969823708}
   - component: {fileID: 969823707}
-  - component: {fileID: 969823712}
   - component: {fileID: 969823706}
+  - component: {fileID: 969823712}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1042,6 +1042,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 900886f250524274281019f6cab3ab2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHand: {fileID: 0}
+  weaponSlot: {fileID: 0}
+  weapon: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &999075179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,14 +1146,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 913958578}
-  disFromTarget: 5
+  disFromTarget: 3
   ZoomEnabled: 1
   zoomRayCastOn: 0
   zoomRayCastMask: FocusArea
   zoomFocused: 0
   zoomDist: 2.5
   zoomSpeed: 5
-  mouseSensitivity: 10
+  mouseSensitivity: 2
   rotationSmoothing: 0.15
   pitchMinMax: {x: -15, y: 40}
 --- !u!114 &999075184
@@ -1167,6 +1172,11 @@ MonoBehaviour:
   defaultMaterial: {fileID: 2100000, guid: 2aaa5004900c99246b747715f2ec6200, type: 2}
   popUp: {fileID: 925473334}
   player: {fileID: 969823705}
+  sphereRadius: 0.5
+  maxDistance: 9
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &1220494516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,6 +1398,7 @@ RectTransform:
   - {fileID: 1312799965}
   - {fileID: 95685678}
   - {fileID: 925473335}
+  - {fileID: 2098898218}
   m_Father: {fileID: 999075182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1706,6 +1717,81 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.7, y: 90.36, z: 5.3}
   m_Center: {x: 0, y: 44.96, z: 0}
+--- !u!1 &2098898217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098898218}
+  - component: {fileID: 2098898221}
+  - component: {fileID: 2098898219}
+  m_Layer: 0
+  m_Name: WeaponSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2098898218
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098898217}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4903513, y: 0.49035126, z: 0.49035126}
+  m_Children: []
+  m_Father: {fileID: 1376814580}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -418.1, y: -114.70001}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2098898219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098898217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 17914e8185952334f85e84310cf5782e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2098898221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098898217}
+  m_CullTransparentMesh: 0
 --- !u!1 &2127456543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7695172716248602867, guid: cc68eb1a480920b48937bc145ce5ba9c,
@@ -1725,3 +1811,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.15, y: 86.976074, z: 52.6}
   m_Center: {x: 0, y: 44.530174, z: -0.0000134602815}
+--- !u!114 &2127456548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127456543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900886f250524274281019f6cab3ab2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHand: {fileID: 375569018}
+  weaponSlot: {fileID: 2098898219}
+  weapon: {fileID: 11400000, guid: 857f566f00ea3e74dabf30de52738635, type: 2}
+  position: {x: 0, y: 0.921, z: 0.425}
+  rotation: {x: 176.969, y: -95.6929, z: 27.94199}
