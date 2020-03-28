@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerPickup : MonoBehaviour
+public class scri_PlayerPickup : MonoBehaviour
 {
     //This script should be attached to any player weapon
     public GameObject playerHand;
     public Image weaponSlot;
-    public Item weapon;
+    public scri_Item weapon;
 
     public Vector3 position;
     public Vector3 rotation;

@@ -10,6 +10,10 @@ Pretenses:
 	- prfb_MyPrefab
 - Materials
 	- mtrl_MyMaterial
+- UI Sprite
+	- ui_MySprite
+-ScriptableObject
+	-so_MyObject
 ect.
 
 Scenes:

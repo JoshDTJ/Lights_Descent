@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d762f771d2aee5e4687330f5c38f2976, type: 3}
-  m_Name: Sword
+  m_Name: so_Sword
   m_EditorClassIdentifier: 
   itemName: Short Sword
   icon: {fileID: 21300000, guid: 2182c376113ff7d4a946f422c482b6c3, type: 3}

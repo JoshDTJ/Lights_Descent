@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraRaycast : MonoBehaviour
+public class scri_CameraRaycast : MonoBehaviour
 {
     // Start is called before the first frame update
     public Material highlightMaterial;
