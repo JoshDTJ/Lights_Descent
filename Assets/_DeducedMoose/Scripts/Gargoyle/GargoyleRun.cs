@@ -34,8 +34,8 @@ public class GargoyleRun : StateBehaviour
         if(Vector3.Distance(transform.position,pointToGarTo - transform.position) <1f)
             if(runInterval < 0)
             {
-                runInterval = 0;
-                SendEvent("GargoyleStartWalk");
+               // runInterval = 0;
+                SendEvent("GargoyleStartAttack");
             }
     }
 }

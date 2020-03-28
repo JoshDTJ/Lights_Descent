@@ -8,17 +8,19 @@ public class GargoyleAttack : StateBehaviour
 {
     public GameObjectVar ThePlayer;
     private NavMeshAgent TheGar;
-     NavMeshPath GarPath; 
+    //public BoolVar garAttackPlayer;
+    NavMeshPath GarPath; 
     public float timerStartTime;
     public float timerInterval = 3;
 
-   void OnEnable()
+   private void OnEnable()
     {
         blackboard.GetGameObjectVar("PlayerKill").Value = FindObjectOfType<ThirdPersonCharacterController>().gameObject;
         timerStartTime = Time.time;
     }
    void Awake()
     {
+        timerInterval = 3;
         TheGar = GetComponent<NavMeshAgent>();
         GarPath = new NavMeshPath();
     }
@@ -29,15 +31,15 @@ public class GargoyleAttack : StateBehaviour
     }
     void GarToNextPoint()
     {
+        timerInterval -= Time.deltaTime;
         TheGar.CalculatePath(blackboard.GetGameObjectVar("PlayerKill").Value.transform.position, GarPath);
         TheGar.SetPath(GarPath);
+
         if (Vector3.Distance(transform.position, blackboard.GetGameObjectVar("PlayerKill").Value.transform.position) < 2)
         {
-            SendEvent("GargoyleStartAttack");
-        }
-        else if(timerStartTime + timerInterval < Time.time)
-        {
+            timerInterval = 0;
             SendEvent("GargoyleStartIdle");
         }
     }
+       
 }
