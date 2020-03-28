@@ -11,7 +11,7 @@ public class GargoyleRun : StateBehaviour
     public Vector3 pointToGarTo;
     public float runInterval;
 
- void OnEnable()
+    void OnEnable()
     {
         waypointParent = GetComponent<Blackboard>().GetGameObjectVar("wayPointParent");
         garSpeed = GetComponent<Blackboard>().GetFloatVar("garSpeed");
@@ -20,7 +20,7 @@ public class GargoyleRun : StateBehaviour
         runInterval = 5;
     }
 
-  void Update()
+    void Update()
     {
         GarToPoint();
     }
@@ -31,10 +31,10 @@ public class GargoyleRun : StateBehaviour
         transform.position = Vector3.MoveTowards(transform.position, pointToGarTo - transform.position, garSpeed.Value * Time.deltaTime);
         transform.rotation = Quaternion.LookRotation(Vector3.RotateTowards(transform.position, pointToGarTo - transform.position.normalized, 5, 0), Vector3.up);
 
-        if(Vector3.Distance(transform.position,pointToGarTo - transform.position) <1f)
-            if(runInterval < 0)
+        if (Vector3.Distance(transform.position, pointToGarTo - transform.position) < 1f)
+            if (runInterval < 0)
             {
-               // runInterval = 0;
+                // runInterval = 0;
                 SendEvent("GargoyleStartAttack");
             }
     }

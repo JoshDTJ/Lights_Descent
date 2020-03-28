@@ -44,8 +44,6 @@ GameObject:
   - component: {fileID: 634220029}
   - component: {fileID: 634220030}
   - component: {fileID: 634220031}
-  - component: {fileID: 634220034}
-  - component: {fileID: 634220033}
   - component: {fileID: 5224457957871219825}
   - component: {fileID: 6869928319836943278}
   - component: {fileID: 4010340875569469585}
@@ -159,7 +157,17 @@ MonoBehaviour:
     m_Blackboard: {fileID: 634220030}
     m_IsConstant: 0
     value: 5
-  m_IntVars: []
+  - m_ID: 283244290
+    m_Name: garlookRadius
+    m_Blackboard: {fileID: 634220030}
+    m_IsConstant: 0
+    value: 10
+  m_IntVars:
+  - m_ID: 1621458297
+    m_Name: damagePlayer
+    m_Blackboard: {fileID: 634220030}
+    m_IsConstant: 0
+    value: 10
   m_BoolVars: []
   m_StringVars: []
   m_Vector3Vars: []
@@ -223,57 +231,13 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: -12520
+  m_CachedInstanceID: -44304
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
-  m_StartState: {fileID: 6869928319836943278}
+  m_StartState: {fileID: 5224457957871219825}
   m_AnyState: {fileID: 0}
   m_ConcurrentState: {fileID: 0}
---- !u!114 &634220034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6005001703329178312}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46d623e3928499e499ba2f4571f7e942, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Blackboard: {fileID: 634220030}
-  m_Parent: {fileID: 0}
-  m_StateName: GargoyleIdle
-  m_Color: 0
-  m_HideScript: 1
-  m_Position: {x: 0, y: 0}
-  m_Transitions: []
-  m_CachedInstanceID: -12522
-  idleInterval: 5
---- !u!114 &634220033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6005001703329178312}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35fd88746f2d7794881a1f97c0bbddf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Blackboard: {fileID: 634220030}
-  m_Parent: {fileID: 0}
-  m_StateName: GargoyleRun
-  m_Color: 0
-  m_HideScript: 1
-  m_Position: {x: 0, y: 0}
-  m_Transitions: []
-  m_CachedInstanceID: -12524
-  garHealth: 0
-  pointToGarTo: {x: 0, y: 0, z: 0}
-  runInterval: 0
 --- !u!114 &5224457957871219825
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -295,7 +259,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 6869928319836943278}
     m_EventID: 1145024295
-  m_CachedInstanceID: -12526
+  m_CachedInstanceID: -44306
   idleInterval: 5
 --- !u!114 &6869928319836943278
 MonoBehaviour:
@@ -314,11 +278,11 @@ MonoBehaviour:
   m_StateName: GargoyleRun
   m_Color: 0
   m_HideScript: 1
-  m_Position: {x: 210, y: -150}
+  m_Position: {x: 190, y: -150}
   m_Transitions:
   - m_Destination: {fileID: 4010340875569469585}
     m_EventID: 399929876
-  m_CachedInstanceID: -12528
+  m_CachedInstanceID: -44308
   garHealth: 0
   pointToGarTo: {x: 0, y: 0, z: 0}
   runInterval: 0
@@ -343,7 +307,10 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 5224457957871219825}
     m_EventID: 814486687
-  m_CachedInstanceID: -12530
+  m_CachedInstanceID: -44310
+  playerHealth: 0
+  garlookRdius: 10
+  damagePlayer: 0
   timerStartTime: 0
   timerInterval: 3
 --- !u!1001 &4758214828994765322
