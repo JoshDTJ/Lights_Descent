@@ -13,7 +13,11 @@ Pretenses:
 - UI Sprite
 	- ui_MySprite
 -ScriptableObject
-	-so_MyObject
+	- so_MyObject
+-Animator
+	- animctrl_MyAnimator
+- Animation
+	- anim_MyAnimation
 ect.
 
 Scenes:
