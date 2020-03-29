@@ -5,13 +5,18 @@ using UnityEngine.UI;
 
 public class scri_PlayerPickup : MonoBehaviour
 {
+    #region Unused
     //This script should be attached to any player weapon
-    public GameObject playerHand;
+    //public GameObject playerHand;
+    #endregion
+
     public Image weaponSlot;
     public scri_Item weapon;
 
-    public Vector3 position;
-    public Vector3 rotation;
+    #region Unused
+    //public Vector3 position;
+    //public Vector3 rotation;
+    #endregion
 
     public void PickUp()
     {
@@ -19,9 +24,11 @@ public class scri_PlayerPickup : MonoBehaviour
         weaponSlot.sprite = weapon.icon;
         Debug.Log("Equip");
 
+        #region Unused
         //Placing the transform of the weapon into the player's "hand"
-        transform.parent = playerHand.transform;
-        transform.localPosition = position;
-        transform.localEulerAngles = rotation;
+        //transform.parent = playerHand.transform;
+        //transform.localPosition = position;
+        //transform.localEulerAngles = rotation;
+        #endregion
     }
 }
