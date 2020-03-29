@@ -5983,3 +5983,77 @@ Transform:
   m_Father: {fileID: 2038677113}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1330617089557895763
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6784644497049631664, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_Name
+      value: HardLightSword
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000006783011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000036219944
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.9997712
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.021394929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049797184, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -177.548
+      objectReference: {fileID: 0}
+    - target: {fileID: 6784644497049631671, guid: ca3693dd6bf5024479c56fbf473cebb4,
+        type: 3}
+      propertyPath: weaponSlot
+      value: 
+      objectReference: {fileID: 354698452}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca3693dd6bf5024479c56fbf473cebb4, type: 3}
