@@ -3,7 +3,12 @@ guid: c9f3671aa5f478c40b51219458d742ed
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gargoyle_1Mat
+    second: {fileID: 2100000, guid: 46fb1218d11684e45963419fd76218c5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
