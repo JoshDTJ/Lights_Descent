@@ -6,8 +6,10 @@ namespace Invector
 {
     public class scri_MoveTowards : MonoBehaviour
     {
-        private float speed = 0.2f;
+        public float speed = 0.2f;
+
         private Transform target;
+
         public bool moving;
         // Start is called before the first frame update
         void Start()
@@ -17,14 +19,14 @@ namespace Invector
 
         private void FixedUpdate()
         {
-            if(moving == true)
+            if (moving == true)
             {
                 float step = speed * Time.deltaTime;
-                transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x, transform.position.y, target.position.z), step);
             }
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerStay(Collider other)
         {
             if (other.gameObject.tag == "Player")
             {
