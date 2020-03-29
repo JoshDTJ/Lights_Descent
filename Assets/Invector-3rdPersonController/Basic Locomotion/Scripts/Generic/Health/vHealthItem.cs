@@ -21,7 +21,8 @@ namespace Invector
                     if (healthController.currentHealth < healthController.maxHealth)
                     {
                         // limit healing to the max health
-                        healthController.ChangeHealth((int)value);
+                        healthController.AddHealth((int)value);
+                        Destroy(transform.parent.gameObject);
                         Destroy(gameObject);
                     }                    
                 }
