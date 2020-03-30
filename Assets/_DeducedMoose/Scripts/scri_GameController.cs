@@ -6,6 +6,7 @@ using UnityEngine.Analytics;
 
 public class scri_GameController : MonoBehaviour
 {
+    //the variables for tracking analytics
     public int
         enemiesKilled,
         playerHit,
@@ -29,28 +30,34 @@ public class scri_GameController : MonoBehaviour
     }
     private void Update()
     {
+        //track playtime
         playTime += Time.deltaTime;
     }
 
     public void EnemKilled()
     {
+        //track total amount of enemies killed (if players kill all enemies)
         enemiesKilled++;
     }
     public void PlayHit()
     {
+        //Track how many times the player is getting hit
         playerHit++;
     }
     public void HealthUp()
     {
+        //track how many times playre picks up a health potion
         healthPickedUp++;
     }
     public void PlayDead()
     {
+        //how many times a player dies on this playthrough
         playerDeaths++;
     }
 
     public void ResetStats()
     {
+        //resets all the states for this playthrough
         enemiesKilled = 0;
         playerHit = 0;
         healthPickedUp = 0;
@@ -58,6 +65,9 @@ public class scri_GameController : MonoBehaviour
 
     public void ReportData()
     {
+        //report all the data
+        //this is called in multiple places including the player's events, the enemies events,
+        //and the PlayerPickup script made by us
         Analytics.CustomEvent("PlayData", new Dictionary<string, object>
         {
             {"amount_of_enemies_killed", enemiesKilled},
