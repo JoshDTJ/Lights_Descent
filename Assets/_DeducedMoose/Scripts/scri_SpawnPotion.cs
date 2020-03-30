@@ -5,7 +5,7 @@ using UnityEngine;
 public class scri_SpawnPotion : MonoBehaviour
 {
     public GameObject potion;
-    private float waitTime = 15f;
+    public float waitTime = 15f;
     public List<GameObject> _potions;
     // Start is called before the first frame update
     private void Start()

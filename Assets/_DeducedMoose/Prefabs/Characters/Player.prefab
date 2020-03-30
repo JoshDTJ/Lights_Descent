@@ -1647,13 +1647,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 1
-  selectedToolbar: 2
+  openCloseWindow: 0
+  selectedToolbar: 0
   _isDead: 0
-  _currentHealth: 50
+  _currentHealth: 150
   isImmortal: 0
   fillHealthOnStart: 1
-  maxHealth: 100
+  maxHealth: 150
   healthRecovery: 0
   healthRecoveryDelay: 0
   currentHealthRecoveryDelay: 0
@@ -1782,9 +1782,9 @@ MonoBehaviour:
   extraGravity: -10
   limitFallVelocity: -15
   ragdollVelocity: -15
-  fallMinHeight: 6
+  fallMinHeight: 100
   fallMinVerticalVelocity: -10
-  fallDamage: 10
+  fallDamage: 0
   useRollRootMotion: 1
   rollControl: 1
   rollSpeed: 0
@@ -2111,7 +2111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openCloseEvents: 0
-  openCloseWindow: 1
+  openCloseWindow: 0
   selectedToolbar: 0
   Members:
   - transform: {fileID: 3487760949559642580}
@@ -2146,6 +2146,7 @@ MonoBehaviour:
   hitProperties:
     hitDamageTags:
     - Enemy
+    - Boss
     useRecoil: 1
     drawRecoilGizmos: 0
     recoilRange: 90
@@ -2186,6 +2187,7 @@ MonoBehaviour:
   selectedToolbar: 0
   tagsToFind:
   - Enemy
+  - Boss
   layerOfObstacles:
     serializedVersion: 2
     m_Bits: 1
