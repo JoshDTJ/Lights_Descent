@@ -2,7 +2,7 @@
 
 namespace Invector
 {
-    public class vHealthItem : MonoBehaviour
+    public class scri_BackupHealth : MonoBehaviour
     {
         public float closeDistance = 2;
         public GameObject closestSpawn;
