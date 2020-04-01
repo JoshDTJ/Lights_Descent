@@ -47,11 +47,6 @@ namespace Invector.vMelee
                     collectableStandAlone.weapon.transform.SetParent(p);
                     collectableStandAlone.weapon.transform.localPosition = Vector3.zero;
                     collectableStandAlone.weapon.transform.localEulerAngles = Vector3.zero;
-                   
-                    //ours
-                    collectableStandAlone.weapon.GetComponent<scri_PlayerPickup>().PickUp();
-                    //end ours
-
                     if (rightWeapon && rightWeapon != weapon.gameObject)
                         RemoveRightWeapon();
 

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 #endif
 namespace Invector.vCharacterController
 {
-
     public class vLoadLevel : MonoBehaviour
     {
         [Tooltip("Write the name of the level you want to load")]
@@ -15,13 +14,6 @@ namespace Invector.vCharacterController
         [Tooltip("Assign here the spawnPoint name of the scene that you will load")]
         public string spawnPointName;
 
-        public GameObject gameController;
-
-        void Start()
-        {
-            gameController = GameObject.FindGameObjectWithTag("GameController");
-
-        }
         void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("Player"))
@@ -33,8 +25,6 @@ namespace Invector.vCharacterController
                 spawnPointFinder.AlighObjetToSpawnPoint(other.gameObject, spawnPointName);
 
 #if UNITY_5_3_OR_NEWER
-                gameController.GetComponent<scri_GameController>().ReportData();
-
                 SceneManager.LoadScene(levelToLoad);
 #else
         		Application.LoadLevel(levelToLoad);

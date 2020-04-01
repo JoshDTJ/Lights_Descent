@@ -30,7 +30,6 @@ TagManager:
   - CoverPoint
   - Interactable
   - AIAction
-  - Spawn
   layers:
   - Default
   - TransparentFX
