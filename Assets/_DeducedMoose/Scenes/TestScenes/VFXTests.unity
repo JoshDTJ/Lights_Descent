@@ -5250,6 +5250,11 @@ PrefabInstance:
       propertyPath: LightsModule.ratio
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1993200041673541651, guid: 2aefcb0e123c9c24da7d3cadfc817d39,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1993200041673541650, guid: 2aefcb0e123c9c24da7d3cadfc817d39,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5264,6 +5269,31 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
       value: 0.047058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993200041392626226, guid: 2aefcb0e123c9c24da7d3cadfc817d39,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993200041238108040, guid: 2aefcb0e123c9c24da7d3cadfc817d39,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993200042547635878, guid: 2aefcb0e123c9c24da7d3cadfc817d39,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993200042908815040, guid: 2aefcb0e123c9c24da7d3cadfc817d39,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 87633492936820618, guid: 2aefcb0e123c9c24da7d3cadfc817d39,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aefcb0e123c9c24da7d3cadfc817d39, type: 3}
@@ -5472,6 +5502,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5269943321400878639, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.x.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269943321400878639, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.y.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269943321400878639, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.z.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269943321400878639, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.x.minScalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269943321597839161, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.x.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269943321597839161, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.y.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269943321597839161, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.z.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5269943321597839161, guid: a3782ded519804642941b52209b6d7cf,
+        type: 3}
+      propertyPath: VelocityModule.x.minScalar
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3782ded519804642941b52209b6d7cf, type: 3}
 --- !u!1001 &8977723634192019840
@@ -5540,6 +5610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 806623978666587576, guid: b98fc03702041a741b921d7978eada9b,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b98fc03702041a741b921d7978eada9b, type: 3}
