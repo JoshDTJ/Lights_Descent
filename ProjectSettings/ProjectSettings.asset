@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 18
-  productGUID: 00000000000000000000000000000000
+  productGUID: c5ad925f157a08841b348bca93f895bf
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -642,7 +642,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: b1164fe4-006f-4aa7-b617-f3cb1aac13cb
   framebufferDepthMemorylessMode: 0
-  projectName: 
+  projectName: Lights_Descent
   organizationId: joshdtjewer
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

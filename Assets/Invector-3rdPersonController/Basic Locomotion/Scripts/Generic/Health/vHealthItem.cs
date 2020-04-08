@@ -14,9 +14,9 @@ namespace Invector
         public void Update()
         {
             GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("Spawn");
-            foreach(GameObject point in spawnPoints)
+            foreach (GameObject point in spawnPoints)
             {
-                if(Vector3.Distance(transform.position, point.transform.position) <= closeDistance)
+                if (Vector3.Distance(transform.position, point.transform.position) <= closeDistance)
                 {
                     closestSpawn = point.gameObject;
                     potionScript = closestSpawn.GetComponent<scri_SpawnPotion>();
@@ -38,10 +38,10 @@ namespace Invector
                     {
                         // limit healing to the max health
                         potionScript._potions.Clear();
-                        healthController.ChangeHealth((int)value);
+                        healthController.AddHealth((int)value);
                         Destroy(gameObject);
                         Destroy(transform.parent.gameObject);
-                    }                    
+                    }
                 }
             }
         }
