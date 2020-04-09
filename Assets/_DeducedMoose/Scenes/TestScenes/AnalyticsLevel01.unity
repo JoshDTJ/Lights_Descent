@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.091475256, g: 0.08219174, b: 0.0674351, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5795,21 +5795,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 6839009904447602884, guid: 195b09b6f6cb2454680d6da85382fe24,
-        type: 3}
-      propertyPath: spawnPointName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6839009904447602884, guid: 195b09b6f6cb2454680d6da85382fe24,
-        type: 3}
-      propertyPath: findSpawnPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6839009904447602884, guid: 195b09b6f6cb2454680d6da85382fe24,
-        type: 3}
-      propertyPath: levelToLoad
-      value: EndGameScene
-      objectReference: {fileID: 0}
     - target: {fileID: 6839009904672575229, guid: 195b09b6f6cb2454680d6da85382fe24,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5849,6 +5834,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839009904447602884, guid: 195b09b6f6cb2454680d6da85382fe24,
+        type: 3}
+      propertyPath: spawnPointName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839009904447602884, guid: 195b09b6f6cb2454680d6da85382fe24,
+        type: 3}
+      propertyPath: findSpawnPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839009904447602884, guid: 195b09b6f6cb2454680d6da85382fe24,
+        type: 3}
+      propertyPath: levelToLoad
+      value: EndGameScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195b09b6f6cb2454680d6da85382fe24, type: 3}
@@ -11881,7 +11881,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -18118,7 +18118,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
